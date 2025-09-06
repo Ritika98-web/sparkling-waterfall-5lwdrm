@@ -1,0 +1,728 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Anshumat Foundation – Empowering Through Knowledge</title>
+    <meta
+      name="description"
+      content="Anshumat Foundation (Section 8 Non-Profit): knowledge, mentorship & career development initiatives. Join as volunteer or donor."
+    />
+    <!-- Bootstrap 5 CSS -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
+    <!-- Bootstrap Icons -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.css"
+      rel="stylesheet"
+    />
+    <style>
+      :root {
+        --brand: #0d6efd; /* bootstrap primary */
+        --brand-accent: #0b5ed7;
+      }
+      body {
+        scroll-behavior: smooth;
+      }
+      .navbar-brand span {
+        font-weight: 700;
+      }
+      .hero {
+        background: linear-gradient(
+            135deg,
+            rgba(13, 110, 253, 0.1),
+            rgba(25, 135, 84, 0.08)
+          ),
+          url("https://images.unsplash.com/photo-1520975916090-3105956dac38?q=80&w=1600&auto=format&fit=crop")
+            center/cover no-repeat;
+        color: #0b2447;
+      }
+      .hero-overlay {
+        backdrop-filter: blur(1.5px);
+      }
+      .section-title {
+        font-weight: 800;
+        letter-spacing: 0.2px;
+      }
+      .stat {
+        font-size: 2rem;
+        font-weight: 800;
+      }
+      .badge-soft {
+        background: rgba(13, 110, 253, 0.1);
+        color: var(--brand);
+      }
+      .card {
+        border: 0;
+        box-shadow: 0 10px 24px rgba(0, 0, 0, 0.05);
+      }
+      .divider {
+        height: 1px;
+        background: rgba(0, 0, 0, 0.08);
+      }
+      .footer a {
+        color: #d1e3ff;
+        text-decoration: none;
+      }
+      .form-required::after {
+        content: " *";
+        color: #dc3545;
+      }
+    </style>
+  </head>
+  <body>
+    <!-- NAVBAR -->
+    <nav class="navbar navbar-expand-lg bg-white sticky-top border-bottom">
+      <div class="container">
+        <a class="navbar-brand d-flex align-items-center gap-2" href="#">
+          <i class="bi bi-mortarboard-fill text-primary"></i>
+          <span>Anshumat<span class="text-primary">.org</span></span>
+        </a>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#nav"
+          aria-controls="nav"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div id="nav" class="collapse navbar-collapse">
+          <ul class="navbar-nav ms-auto mb-2 mb-lg-0 align-items-lg-center">
+            <li class="nav-item">
+              <a class="nav-link" href="#mission">Mission</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#initiatives">Initiatives</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#programs">Programs</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#impact">Impact</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#contact">Contact</a>
+            </li>
+            <li class="nav-item ms-lg-3 mt-2 mt-lg-0">
+              <a class="btn btn-primary" href="#register"
+                ><i class="bi bi-person-plus me-1"></i>Register</a
+              >
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+    <!-- HERO -->
+    <header class="hero py-5">
+      <div class="hero-overlay">
+        <div class="container py-4 py-md-5">
+          <div class="row align-items-center g-4">
+            <div class="col-lg-7">
+              <span class="badge badge-soft rounded-pill mb-2"
+                >Section 8 Non‑Profit</span
+              >
+              <h1 class="display-5 fw-bold">
+                Empowering through Knowledge, Mentorship & Career Development
+              </h1>
+              <p class="lead mt-3">
+                We help students and early‑career professionals access learning
+                resources, mentorship and opportunities that create lasting
+                <strong>social impact</strong>.
+              </p>
+              <div class="d-flex gap-2 mt-3">
+                <a href="#register" class="btn btn-primary btn-lg"
+                  ><i class="bi bi-heart-fill me-1"></i> Become a Volunteer</a
+                >
+                <a href="#programs" class="btn btn-outline-primary btn-lg"
+                  >Explore Programs</a
+                >
+              </div>
+            </div>
+            <div class="col-lg-5">
+              <div class="card p-3 p-md-4">
+                <div class="card-body">
+                  <h5 class="card-title mb-3">Newsletter</h5>
+                  <form id="newsletterForm" novalidate>
+                    <div class="mb-3">
+                      <label class="form-label form-required">Email</label>
+                      <input
+                        type="email"
+                        class="form-control"
+                        placeholder="you@example.com"
+                        required
+                      />
+                      <div class="invalid-feedback">
+                        Please enter a valid email.
+                      </div>
+                    </div>
+                    <button class="btn btn-success w-100" type="submit">
+                      <i class="bi bi-send me-1"></i> Subscribe
+                    </button>
+                  </form>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </header>
+
+    <!-- MISSION -->
+    <section id="mission" class="py-5">
+      <div class="container">
+        <div class="row align-items-center g-4">
+          <div class="col-md-6">
+            <img
+              class="img-fluid rounded-4"
+              alt="Mentorship"
+              src="https://images.unsplash.com/photo-1523580846011-d3a5bc25702b?q=80&w=1200&auto=format&fit=crop"
+            />
+          </div>
+          <div class="col-md-6">
+            <span class="text-uppercase small text-primary fw-semibold"
+              >Our Mission</span
+            >
+            <h2 class="section-title mt-2">
+              Trust. Social Impact. Professionalism.
+            </h2>
+            <p class="mt-2">
+              Anshumat Foundation is dedicated to enabling equitable access to
+              quality education and career mentorship. We partner with mentors,
+              institutions and employers to deliver programs that build
+              practical skills and create pathways to meaningful work.
+            </p>
+            <ul class="list-unstyled mt-3">
+              <li class="mb-2">
+                <i class="bi bi-shield-check text-success me-2"></i>Transparent
+                operations & safeguarding
+              </li>
+              <li class="mb-2">
+                <i class="bi bi-people text-success me-2"></i>Community‑driven
+                mentorship networks
+              </li>
+              <li class="mb-2">
+                <i class="bi bi-award text-success me-2"></i>Career development
+                with measurable outcomes
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- INITIATIVES -->
+    <section id="initiatives" class="py-5 bg-light">
+      <div class="container">
+        <div class="text-center mb-4">
+          <span class="text-uppercase small text-primary fw-semibold"
+            >What We Do</span
+          >
+          <h2 class="section-title mt-2">Key Initiatives</h2>
+          <p class="text-muted">
+            Programs designed to uplift learners and job‑seekers across India.
+          </p>
+        </div>
+        <div class="row g-4">
+          <div class="col-md-4">
+            <div class="card h-100">
+              <div class="card-body">
+                <div class="d-flex align-items-center mb-3">
+                  <i class="bi bi-journal-richtext fs-3 text-primary me-2"></i>
+                  <h5 class="mb-0">Knowledge Hubs</h5>
+                </div>
+                <p>
+                  Open‑access learning resources, workshops and study circles
+                  that build technical and professional skills.
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-4">
+            <div class="card h-100">
+              <div class="card-body">
+                <div class="d-flex align-items-center mb-3">
+                  <i class="bi bi-person-hearts fs-3 text-primary me-2"></i>
+                  <h5 class="mb-0">Mentorship</h5>
+                </div>
+                <p>
+                  One‑to‑one and group mentorship with industry professionals
+                  for guidance, projects and career planning.
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-4">
+            <div class="card h-100">
+              <div class="card-body">
+                <div class="d-flex align-items-center mb-3">
+                  <i class="bi bi-briefcase fs-3 text-primary me-2"></i>
+                  <h5 class="mb-0">Career Readiness</h5>
+                </div>
+                <p>
+                  Bootcamps, mock interviews and placement support to bridge the
+                  gap from education to employment.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- PROGRAMS -->
+    <section id="programs" class="py-5">
+      <div class="container">
+        <div class="text-center mb-4">
+          <span class="text-uppercase small text-primary fw-semibold"
+            >How You Can Engage</span
+          >
+          <h2 class="section-title mt-2">Programs & Opportunities</h2>
+        </div>
+        <div class="row g-4">
+          <div class="col-md-6 col-lg-3">
+            <div class="card h-100">
+              <div class="card-body">
+                <h5 class="card-title">Student Scholarships</h5>
+                <p class="card-text">
+                  Need‑based and merit scholarships supported by our donors.
+                </p>
+                <a class="btn btn-outline-primary btn-sm" href="#register"
+                  >Apply</a
+                >
+              </div>
+            </div>
+          </div>
+          <div class="col-md-6 col-lg-3">
+            <div class="card h-100">
+              <div class="card-body">
+                <h5 class="card-title">Mentor Network</h5>
+                <p class="card-text">
+                  Volunteer as a mentor and guide learners on projects and
+                  careers.
+                </p>
+                <a class="btn btn-outline-primary btn-sm" href="#register"
+                  >Join</a
+                >
+              </div>
+            </div>
+          </div>
+          <div class="col-md-6 col-lg-3">
+            <div class="card h-100">
+              <div class="card-body">
+                <h5 class="card-title">Women in Tech</h5>
+                <p class="card-text">
+                  Cohort‑based program to build confidence and job‑ready skills.
+                </p>
+                <a class="btn btn-outline-primary btn-sm" href="#register"
+                  >Learn More</a
+                >
+              </div>
+            </div>
+          </div>
+          <div class="col-md-6 col-lg-3">
+            <div class="card h-100">
+              <div class="card-body">
+                <h5 class="card-title">Community Classes</h5>
+                <p class="card-text">
+                  Weekend classes & workshops led by volunteers.
+                </p>
+                <a class="btn btn-outline-primary btn-sm" href="#register"
+                  >Volunteer</a
+                >
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- IMPACT STATS & TESTIMONIAL -->
+    <section id="impact" class="py-5 bg-light">
+      <div class="container">
+        <div class="row g-4 align-items-center">
+          <div class="col-lg-6">
+            <div class="row text-center g-3">
+              <div class="col-6">
+                <div class="p-4 bg-white rounded-4 shadow-sm h-100">
+                  <div class="stat">5k+</div>
+                  <div class="text-muted">Learners Reached</div>
+                </div>
+              </div>
+              <div class="col-6">
+                <div class="p-4 bg-white rounded-4 shadow-sm h-100">
+                  <div class="stat">800+</div>
+                  <div class="text-muted">Mentor Sessions</div>
+                </div>
+              </div>
+              <div class="col-6">
+                <div class="p-4 bg-white rounded-4 shadow-sm h-100">
+                  <div class="stat">120+</div>
+                  <div class="text-muted">Scholarships</div>
+                </div>
+              </div>
+              <div class="col-6">
+                <div class="p-4 bg-white rounded-4 shadow-sm h-100">
+                  <div class="stat">60%</div>
+                  <div class="text-muted">Job Conversions</div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-6">
+            <div class="card border-0 shadow-sm">
+              <div class="card-body p-4">
+                <div class="d-flex align-items-center gap-3 mb-2">
+                  <img
+                    class="rounded-circle"
+                    width="56"
+                    height="56"
+                    alt="Alumni"
+                    src="https://images.unsplash.com/photo-1544005313-94ddf0286df2?q=80&w=200&auto=format&fit=crop"
+                  />
+                  <div>
+                    <h6 class="mb-0">Ayesha, Program Alumna</h6>
+                    <small class="text-muted">Software Engineer</small>
+                  </div>
+                </div>
+                <p class="mb-0">
+                  “The mentorship I received through Anshumat Foundation helped
+                  me crack interviews and become the first engineer in my
+                  family. The community truly cares.”
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- CONTACT -->
+    <section id="contact" class="py-5">
+      <div class="container">
+        <div class="text-center mb-4">
+          <span class="text-uppercase small text-primary fw-semibold"
+            >Get in Touch</span
+          >
+          <h2 class="section-title mt-2">Contact Us</h2>
+        </div>
+        <div class="row g-4">
+          <div class="col-lg-6">
+            <div class="card h-100">
+              <div class="card-body p-4">
+                <h5 class="mb-3">Write to us</h5>
+                <form id="contactForm" novalidate>
+                  <div class="row g-3">
+                    <div class="col-md-6">
+                      <label class="form-label form-required">Full Name</label>
+                      <input type="text" class="form-control" required />
+                      <div class="invalid-feedback">Name is required.</div>
+                    </div>
+                    <div class="col-md-6">
+                      <label class="form-label form-required">Email</label>
+                      <input type="email" class="form-control" required />
+                      <div class="invalid-feedback">Valid email required.</div>
+                    </div>
+                    <div class="col-12">
+                      <label class="form-label">Subject</label>
+                      <input type="text" class="form-control" />
+                    </div>
+                    <div class="col-12">
+                      <label class="form-label form-required">Message</label>
+                      <textarea
+                        class="form-control"
+                        rows="4"
+                        required
+                      ></textarea>
+                      <div class="invalid-feedback">
+                        Message cannot be empty.
+                      </div>
+                    </div>
+                  </div>
+                  <button class="btn btn-primary mt-3" type="submit">
+                    <i class="bi bi-envelope-paper me-1"></i> Send
+                  </button>
+                </form>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-6">
+            <div class="h-100 p-4 bg-light rounded-4">
+              <h5 class="mb-3">Visit</h5>
+              <p class="mb-1">
+                <i class="bi bi-geo-alt me-2"></i>New Delhi, India
+              </p>
+              <p class="mb-1">
+                <i class="bi bi-telephone me-2"></i>+91 99999 99999
+              </p>
+              <p class="mb-3">
+                <i class="bi bi-envelope me-2"></i>hello@anshumat.org
+              </p>
+              <div class="ratio ratio-16x9 rounded-4 overflow-hidden">
+                <iframe
+                  title="map"
+                  src="https://www.openstreetmap.org/export/embed.html?bbox=77.1%2C28.6%2C77.3%2C28.7&amp;layer=mapnik"
+                  loading="lazy"
+                ></iframe>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- REGISTRATION -->
+    <section id="register" class="py-5 bg-light">
+      <div class="container">
+        <div class="text-center mb-4">
+          <span class="text-uppercase small text-primary fw-semibold"
+            >Join the Movement</span
+          >
+          <h2 class="section-title mt-2">Volunteer / Donor Registration</h2>
+          <p class="text-muted">
+            Fill the form and our team will reach out within 48 hours.
+          </p>
+        </div>
+        <div class="row justify-content-center">
+          <div class="col-lg-8">
+            <div class="card">
+              <div class="card-body p-4">
+                <form id="regForm" class="needs-validation" novalidate>
+                  <div class="row g-3">
+                    <div class="col-md-6">
+                      <label class="form-label form-required">Full Name</label>
+                      <input type="text" class="form-control" required />
+                      <div class="invalid-feedback">
+                        Please provide your name.
+                      </div>
+                    </div>
+                    <div class="col-md-6">
+                      <label class="form-label form-required">Email</label>
+                      <input type="email" class="form-control" required />
+                      <div class="invalid-feedback">
+                        Please provide a valid email.
+                      </div>
+                    </div>
+                    <div class="col-md-6">
+                      <label class="form-label">Phone</label>
+                      <input
+                        type="tel"
+                        class="form-control"
+                        pattern="[0-9]{10}"
+                        placeholder="10-digit number"
+                      />
+                      <div class="invalid-feedback">
+                        Enter a 10‑digit phone.
+                      </div>
+                    </div>
+                    <div class="col-md-6">
+                      <label class="form-label form-required"
+                        >I want to join as</label
+                      >
+                      <select class="form-select" required>
+                        <option value="" selected disabled>Choose...</option>
+                        <option>Volunteer</option>
+                        <option>Donor</option>
+                        <option>Mentor</option>
+                      </select>
+                      <div class="invalid-feedback">
+                        Please select one option.
+                      </div>
+                    </div>
+                    <div class="col-12">
+                      <label class="form-label">Skills / Interests</label>
+                      <input
+                        type="text"
+                        class="form-control"
+                        placeholder="e.g. Python, Teaching, Career Guidance"
+                      />
+                    </div>
+                    <div class="col-12">
+                      <label class="form-label">Message</label>
+                      <textarea
+                        class="form-control"
+                        rows="3"
+                        placeholder="Tell us why you want to join"
+                      ></textarea>
+                    </div>
+                  </div>
+                  <div class="form-check mt-3">
+                    <input
+                      class="form-check-input"
+                      type="checkbox"
+                      value=""
+                      id="agree"
+                      required
+                    />
+                    <label class="form-check-label" for="agree"
+                      >I agree to the
+                      <a
+                        href="#"
+                        data-bs-toggle="modal"
+                        data-bs-target="#policyModal"
+                        >privacy policy</a
+                      >.</label
+                    >
+                    <div class="invalid-feedback">
+                      You must agree before submitting.
+                    </div>
+                  </div>
+                  <button class="btn btn-success mt-3" type="submit">
+                    <i class="bi bi-check2-circle me-1"></i> Submit Registration
+                  </button>
+                </form>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- PRIVACY MODAL -->
+    <div class="modal fade" id="policyModal" tabindex="-1" aria-hidden="true">
+      <div class="modal-dialog modal-dialog-centered">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title">Privacy Policy</h5>
+            <button
+              type="button"
+              class="btn-close"
+              data-bs-dismiss="modal"
+              aria-label="Close"
+            ></button>
+          </div>
+          <div class="modal-body">
+            <p>
+              We collect the above information solely to process your
+              participation in Anshumat Foundation programs. We never sell
+              personal data and we comply with applicable data protection
+              regulations.
+            </p>
+          </div>
+          <div class="modal-footer">
+            <button
+              type="button"
+              class="btn btn-primary"
+              data-bs-dismiss="modal"
+            >
+              Close
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- FOOTER -->
+    <footer class="footer bg-dark text-light pt-5 pb-4">
+      <div class="container">
+        <div class="row g-4">
+          <div class="col-md-6">
+            <h5 class="mb-3">Anshumat Foundation</h5>
+            <p class="text-light opacity-75">
+              A Section 8 non‑profit dedicated to empowering individuals through
+              knowledge, mentorship and career development.
+            </p>
+            <div class="d-flex gap-3 fs-5">
+              <a href="#" aria-label="twitter"
+                ><i class="bi bi-twitter-x"></i
+              ></a>
+              <a href="#" aria-label="linkedin"
+                ><i class="bi bi-linkedin"></i
+              ></a>
+              <a href="#" aria-label="instagram"
+                ><i class="bi bi-instagram"></i
+              ></a>
+            </div>
+          </div>
+          <div class="col-md-3">
+            <h6>Quick Links</h6>
+            <ul class="list-unstyled">
+              <li><a href="#mission">Mission</a></li>
+              <li><a href="#initiatives">Initiatives</a></li>
+              <li><a href="#programs">Programs</a></li>
+              <li><a href="#register">Register</a></li>
+            </ul>
+          </div>
+          <div class="col-md-3">
+            <h6>Contact</h6>
+            <ul class="list-unstyled opacity-75">
+              <li><i class="bi bi-geo-alt me-2"></i>New Delhi, India</li>
+              <li><i class="bi bi-envelope me-2"></i>hello@anshumat.org</li>
+            </ul>
+          </div>
+        </div>
+        <div class="divider my-4"></div>
+        <div
+          class="d-flex flex-column flex-md-row justify-content-between align-items-center"
+        >
+          <small class="opacity-75"
+            >© <span id="year"></span> Anshumat Foundation. All rights
+            reserved.</small
+          >
+          <small class="opacity-75"
+            >Made with <i class="bi bi-heart-fill text-danger"></i> for social
+            impact.</small
+          >
+        </div>
+      </div>
+    </footer>
+
+    <!-- Toast (for form success) -->
+    <div class="position-fixed bottom-0 end-0 p-3" style="z-index: 1080">
+      <div
+        id="liveToast"
+        class="toast align-items-center text-bg-success border-0"
+        role="status"
+        aria-live="polite"
+        aria-atomic="true"
+      >
+        <div class="d-flex">
+          <div class="toast-body">
+            <i class="bi bi-check-circle me-1"></i> Form submitted successfully
+            (demo).
+          </div>
+          <button
+            type="button"
+            class="btn-close btn-close-white me-2 m-auto"
+            data-bs-dismiss="toast"
+            aria-label="Close"
+          ></button>
+        </div>
+      </div>
+    </div>
+
+    <!-- Bootstrap 5 JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+    <script>
+      // year
+      document.getElementById("year").textContent = new Date().getFullYear();
+
+      // simple client-side validation + toast
+      const toast = new bootstrap.Toast(document.getElementById("liveToast"));
+      function hookForm(id) {
+        const form = document.getElementById(id);
+        if (!form) return;
+        form.addEventListener("submit", (e) => {
+          e.preventDefault();
+          if (!form.checkValidity()) {
+            e.stopPropagation();
+            form.classList.add("was-validated");
+            return;
+          }
+          // demo: show toast instead of real submit
+          toast.show();
+          form.reset();
+          form.classList.remove("was-validated");
+        });
+      }
+      hookForm("newsletterForm");
+      hookForm("contactForm");
+      hookForm("regForm");
+    </script>
+  </body>
+</html>
